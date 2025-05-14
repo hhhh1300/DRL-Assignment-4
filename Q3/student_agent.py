@@ -83,7 +83,7 @@ def make_test_env(seed):
     env = make_dmc_env(env_name, seed, flatten=True, use_pixels=False)
     env.action_space.seed(seed) 
     return env
-
+ 
 class Agent(object):
     def __init__(self, actor_model_path="model.pth", frame_stack_k=1, device_str="cuda"): 
         """
